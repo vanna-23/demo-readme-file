@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        body{
+        width: 100%;
+        height: 100vh;
+        font-size: 24px;
+        }
+        .all{
+            height: 70vh;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+            grid-template-areas: 
+            'header header header'
+            'sibebar article1 rel'
+            'sibebar article2 rel'
+            'sibebar article3 rel'
+            'footer footer footer';
+        }
+        .header{
+            grid-area: header;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        .sibebar{
+            grid-area: sibebar;
+            background-color: rgba(0, 0, 0, 0.088);
+             padding: 20px;
+        }
+        .article1{
+            grid-area: article1;
+            border: 1px solid rgba(0, 0, 0, 0.279);
+             padding: 20px;
+        }
+        .article2{
+            grid-area: article2;
+            border: 1px solid rgba(0, 0, 0, 0.279);
+             padding: 20px;
+             margin-top: 16px;
+        }
+        .article3{
+            grid-area: article3;
+            border: 1px solid rgba(0, 0, 0, 0.279);
+             padding: 20px;
+             margin-top: 16px;
+        }
+        .rel{
+            grid-area: rel;
+            background-color: rgba(0, 0, 0, 0.088);
+             padding: 20px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <header class="header">header</header>
+        <div class="sibebar">sibebar</div>
+        <div class="article1">Article1</div>
+        <div class="article2">Article2</div>
+        <div class="article3">Article3</div>
+        <div class="rel">Related posts</div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

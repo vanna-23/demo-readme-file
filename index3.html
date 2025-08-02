@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .all {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                'header header header header'
+                'main main main main'
+                'hero hero hero hero'
+                'fea sidebar sidebar sidebar'
+                'tes sidebar sidebar sidebar'
+                'footer footer footer footer';
+        }
+
+        .all>div {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: rgba(0, 0, 0, 0.519);
+            color: white;
+        }
+
+        .hero {
+            grid-area: hero;
+            background-color: aliceblue;
+        }
+
+        .fea {
+            background-color: aliceblue;
+            grid-area: fea;
+        }
+
+        .tes {
+            grid-area: tes;
+            background-color: rgba(240, 248, 255, 0.481);
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgba(100, 101, 101, 0.441);
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">Header</div>
+        <div class="main">Main navigation</div>
+        <div class="hero">Hero section</div>
+        <div class="fea">features</div>
+        <div class="tes">testimonials</div>
+        <div class="sidebar">sidebar</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>
