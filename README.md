@@ -71,6 +71,33 @@ Access the API at
 http://localhost:3000/api
 ```
 # 📮 API Endpoints
+not
 
 # 🔑 Environment Variables
-Create a <button>.env</button> file in the root directory and add:
+Create a .env file in the root directory and add:
+```
+PORT=3000
+DB_URI=your_database_connection_string
+JWT_SECRET=your_jwt_secret_key      
+```
+# 🧪 Scripts
+```
+npm start       # Start the server
+npm run dev     # Start with nodemon
+npm test        # Run test cases
+```
+# 👥 Contributors
+not
+
+# 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+```
+
+---
+
+Let me know:
+- if your project uses MongoDB or MySQL (so I can adjust that part),
+- if you want to include screenshots or setup diagrams,
+- or if you'd like this saved as a downloadable `.md` file.
+```
