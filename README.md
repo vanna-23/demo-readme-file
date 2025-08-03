@@ -123,3 +123,7 @@ Let me know:
 - if you want to include screenshots or setup diagrams,
 - or if you'd like this saved as a downloadable `.md` file.
 ```
+
+# My team
+
+![@vicheka884](https://contrib.rocks/image?repo=vicheka884/Homework_git) ![@vanna-23](https://contrib.rocks/image?repo=vanna-23/demo-readme-file)
