@@ -26,7 +26,19 @@
 - Exam Results
 - User Authentication (JWT)
 - Admin Dashboard
+# Background
 
+Writing READMEs is way too hard, and keeping them maintained is difficult. By offloading this process - making writing easier, making editing easier, making it clear whether or not an edit is up to spec or not - you can spend less time worrying about whether or not your initial documentation is good, and spend more time writing and using code.
+
+By having a standard, users can spend less time searching for the information they want. They can also build tools to gather search terms from descriptions, to automatically run example code, to check licensing, and so on.
+
+The goals for this repository are:
+
+1. A well defined specification. This can be found in the Spec document. It is a <a><ins>constant</ins></a> work in progress; please open issues to discuss changes.
+2. An example README. This Readme is fully standard-readme compliant, and there are more examples in the <a><ins>example-readmes</ins></a> folder.
+3. A linter that can be used to look at errors in a given Readme. Please refer to <a><ins>the tracking issue.</ins></a>
+4. A generator that can be used to quickly scaffold out new READMEs. See <a><ins>generator-standard-readme.</ins></a> 
+5. A compliant badge <a><ins>for users</ins></a> . See the badge.
 # 🛠 Tech Stack 
 
 - **Programming Language:** JavaScript (Node.js)
@@ -51,7 +63,9 @@ cd school-management-system
 ```
 npm install
 ```
-
+```
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+```
 # Screenshot
 
 ![vanna](image.png)
@@ -71,10 +85,17 @@ Access the API at
 http://localhost:3000/api
 ```
 # 📮 API Endpoints
-not
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| POST	 |/api/auth/login |	Login to system|
+|GET	 |/api/students	| Login to system |
+|POST	 |/api/students	| Login to system |
+|PUT	 |/api/students/:id	| Login to system| 
+|DELETE	 |/api/tudents/:id |	Login to system |
 
 # 🔑 Environment Variables
-Create a .env file in the root directory and add:
+Create a `.env` file in the root directory and add:
 ```
 PORT=3000
 DB_URI=your_database_connection_string
@@ -87,7 +108,8 @@ npm run dev     # Start with nodemon
 npm test        # Run test cases
 ```
 # 👥 Contributors
-not
+![@vanna-23](https://contrib.rocks/image?repo=vanna-23/demo-readme-file)
+
 
 # 📄 License
 
